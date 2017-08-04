@@ -169,7 +169,7 @@ THE SOFTWARE.
 
 ## NIMSDK
 
-Copyright 2017 Netease 
+Copyright 2016 Netease 
 
 ## SVProgressHUD
 

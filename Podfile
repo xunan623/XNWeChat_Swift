@@ -6,7 +6,7 @@ use_frameworks!
 
 target 'XNWeChatSwift' do
 
-pod 'NIMSDK', '~> 4.0.0'
+pod 'NIMSDK', '~> 3.2.0'
 pod 'AFNetworking'
 pod 'SnapKit', '~> 3.0.2'
 pod 'HandyJSON', '~> 1.2.1'

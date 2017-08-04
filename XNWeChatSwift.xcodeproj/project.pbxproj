@@ -12,7 +12,13 @@
 		714F7BE71F344524005E47AC /* XNUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7BE61F344524005E47AC /* XNUserController.swift */; };
 		714F7BE91F34458A005E47AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7BE81F34458A005E47AC /* AppDelegate.swift */; };
 		714F7BF61F344C5C005E47AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714F7BF51F344C5C005E47AC /* QuartzCore.framework */; };
-		714F7C061F34568B005E47AC /* LXFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C051F34568B005E47AC /* LXFProgressHUD.swift */; };
+		714F7C0D1F346F4C005E47AC /* LXFWeChatTools+Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C081F346F4C005E47AC /* LXFWeChatTools+Media.swift */; };
+		714F7C0E1F346F4C005E47AC /* LXFWeChatTools+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C091F346F4C005E47AC /* LXFWeChatTools+Message.swift */; };
+		714F7C0F1F346F4C005E47AC /* LXFWeChatTools+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C0A1F346F4C005E47AC /* LXFWeChatTools+Session.swift */; };
+		714F7C101F346F4C005E47AC /* LXFWeChatTools+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C0B1F346F4C005E47AC /* LXFWeChatTools+Update.swift */; };
+		714F7C111F346F4C005E47AC /* LXFWeChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C0C1F346F4C005E47AC /* LXFWeChatTools.swift */; };
+		714F7C141F3471D7005E47AC /* XNOCHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C131F3471D7005E47AC /* XNOCHeader.m */; };
+		714F7C201F3478A9005E47AC /* LXFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */; };
 		717721341F32C15400418A4F /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 717721321F32C15400418A4F /* Expression.bundle */; };
 		717721351F32C15400418A4F /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 717721331F32C15400418A4F /* Expression.plist */; };
 		717721781F32C26700418A4F /* CCSwipBackPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717721371F32C26700418A4F /* CCSwipBackPresentationController.swift */; };
@@ -74,7 +80,14 @@
 		714F7BE61F344524005E47AC /* XNUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNUserController.swift; sourceTree = "<group>"; };
 		714F7BE81F34458A005E47AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		714F7BF51F344C5C005E47AC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		714F7C051F34568B005E47AC /* LXFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXFProgressHUD.swift; sourceTree = "<group>"; };
+		714F7C081F346F4C005E47AC /* LXFWeChatTools+Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LXFWeChatTools+Media.swift"; sourceTree = "<group>"; };
+		714F7C091F346F4C005E47AC /* LXFWeChatTools+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LXFWeChatTools+Message.swift"; sourceTree = "<group>"; };
+		714F7C0A1F346F4C005E47AC /* LXFWeChatTools+Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LXFWeChatTools+Session.swift"; sourceTree = "<group>"; };
+		714F7C0B1F346F4C005E47AC /* LXFWeChatTools+Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LXFWeChatTools+Update.swift"; sourceTree = "<group>"; };
+		714F7C0C1F346F4C005E47AC /* LXFWeChatTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXFWeChatTools.swift; sourceTree = "<group>"; };
+		714F7C121F3471D7005E47AC /* XNOCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNOCHeader.h; sourceTree = "<group>"; };
+		714F7C131F3471D7005E47AC /* XNOCHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNOCHeader.m; sourceTree = "<group>"; };
+		714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXFProgressHUD.swift; sourceTree = "<group>"; };
 		717721321F32C15400418A4F /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		717721331F32C15400418A4F /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		717721371F32C26700418A4F /* CCSwipBackPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSwipBackPresentationController.swift; sourceTree = "<group>"; };
@@ -204,7 +217,8 @@
 		714F7BDB1F34441A005E47AC /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				714F7C051F34568B005E47AC /* LXFProgressHUD.swift */,
+				714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */,
+				714F7C071F346F4C005E47AC /* LXFWeChatTools */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -223,6 +237,18 @@
 				714F7BE61F344524005E47AC /* XNUserController.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		714F7C071F346F4C005E47AC /* LXFWeChatTools */ = {
+			isa = PBXGroup;
+			children = (
+				714F7C081F346F4C005E47AC /* LXFWeChatTools+Media.swift */,
+				714F7C091F346F4C005E47AC /* LXFWeChatTools+Message.swift */,
+				714F7C0A1F346F4C005E47AC /* LXFWeChatTools+Session.swift */,
+				714F7C0B1F346F4C005E47AC /* LXFWeChatTools+Update.swift */,
+				714F7C0C1F346F4C005E47AC /* LXFWeChatTools.swift */,
+			);
+			path = LXFWeChatTools;
 			sourceTree = "<group>";
 		};
 		717721291F32C0E200418A4F /* Classses */ = {
@@ -267,6 +293,8 @@
 				714F7BE81F34458A005E47AC /* AppDelegate.swift */,
 				717721A01F32C30000418A4F /* Category */,
 				717721301F32C15400418A4F /* Resources */,
+				714F7C121F3471D7005E47AC /* XNOCHeader.h */,
+				714F7C131F3471D7005E47AC /* XNOCHeader.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -557,18 +585,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7177218E1F32C26700418A4F /* TZAssetModel.m in Sources */,
+				714F7C0D1F346F4C005E47AC /* LXFWeChatTools+Media.swift in Sources */,
 				717721901F32C26700418A4F /* TZImageCropManager.m in Sources */,
 				7177217F1F32C26700418A4F /* KZVideoListViewController.m in Sources */,
 				717721951F32C26700418A4F /* TZPhotoPreviewCell.m in Sources */,
 				7177219F1F32C2AD00418A4F /* Common.swift in Sources */,
 				717721931F32C26700418A4F /* TZImagePickerController.m in Sources */,
 				717721851F32C26700418A4F /* LBXScanNetAnimation.swift in Sources */,
-				714F7C061F34568B005E47AC /* LXFProgressHUD.swift in Sources */,
+				714F7C0F1F346F4C005E47AC /* LXFWeChatTools+Session.swift in Sources */,
+				714F7C111F346F4C005E47AC /* LXFWeChatTools.swift in Sources */,
 				717721891F32C26700418A4F /* LBXScanWrapper.swift in Sources */,
 				717721861F32C26700418A4F /* LBXScanView.swift in Sources */,
 				717721991F32C26700418A4F /* UIView+Layout.m in Sources */,
+				714F7C101F346F4C005E47AC /* LXFWeChatTools+Update.swift in Sources */,
 				717721981F32C26700418A4F /* TZVideoPlayerController.m in Sources */,
 				717721821F32C26700418A4F /* KZVideoViewController.m in Sources */,
+				714F7C0E1F346F4C005E47AC /* LXFWeChatTools+Message.swift in Sources */,
 				717721971F32C26700418A4F /* TZProgressView.m in Sources */,
 				7177217A1F32C26700418A4F /* CCZoomTransitioner.swift in Sources */,
 				7177217C1F32C26700418A4F /* DACircularProgressView.m in Sources */,
@@ -581,8 +613,10 @@
 				714F7BE91F34458A005E47AC /* AppDelegate.swift in Sources */,
 				714F7BE71F344524005E47AC /* XNUserController.swift in Sources */,
 				717721911F32C26700418A4F /* TZImageManager.m in Sources */,
+				714F7C201F3478A9005E47AC /* LXFProgressHUD.swift in Sources */,
 				7177217B1F32C26700418A4F /* CCZoomTransitionVCExtension.swift in Sources */,
 				717721941F32C26700418A4F /* TZPhotoPickerController.m in Sources */,
+				714F7C141F3471D7005E47AC /* XNOCHeader.m in Sources */,
 				7177218B1F32C26700418A4F /* LXFPopMenu.swift in Sources */,
 				717721A91F32C30000418A4F /* UIButton+Extension.swift in Sources */,
 				7177217E1F32C26700418A4F /* KZVideoConfig.m in Sources */,
@@ -724,6 +758,60 @@
 				DEVELOPMENT_TEAM = WT44JA8HJ5;
 				INFOPLIST_FILE = XNWeChatSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"NIMAVChat\"",
+					"-l\"NIMSDK\"",
+					"-l\"aacplus\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"BadgeSwift\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftDate\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast_Swift\"",
+					"-framework",
+					"\"VideoToolbox\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = centanet.XNWeChatSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/XNWeChatSwift/XNWechatSwift-Bridging-Header.h";
@@ -744,6 +832,60 @@
 				DEVELOPMENT_TEAM = WT44JA8HJ5;
 				INFOPLIST_FILE = XNWeChatSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"NIMAVChat\"",
+					"-l\"NIMSDK\"",
+					"-l\"aacplus\"",
+					"-l\"c++\"",
+					"-l\"crypto\"",
+					"-l\"event\"",
+					"-l\"nio\"",
+					"-l\"nts\"",
+					"-l\"nvs\"",
+					"-l\"openh264\"",
+					"-l\"opus\"",
+					"-l\"sqlite3.0\"",
+					"-l\"ssl\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"BadgeSwift\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"Kingfisher\"",
+					"-framework",
+					"\"LFLiveKit\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftDate\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Toast_Swift\"",
+					"-framework",
+					"\"VideoToolbox\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = centanet.XNWeChatSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/XNWeChatSwift/XNWechatSwift-Bridging-Header.h";
