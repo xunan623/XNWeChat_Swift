@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		712D63EB1F31D34800B3FECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712D63EA1F31D34800B3FECF /* AppDelegate.swift */; };
 		712D63F51F31D34800B3FECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712D63F31F31D34800B3FECF /* LaunchScreen.storyboard */; };
+		714F7BE51F344505005E47AC /* XNMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7BE41F344505005E47AC /* XNMainController.swift */; };
+		714F7BE71F344524005E47AC /* XNUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7BE61F344524005E47AC /* XNUserController.swift */; };
+		714F7BE91F34458A005E47AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7BE81F34458A005E47AC /* AppDelegate.swift */; };
+		714F7BF61F344C5C005E47AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714F7BF51F344C5C005E47AC /* QuartzCore.framework */; };
+		714F7C061F34568B005E47AC /* LXFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C051F34568B005E47AC /* LXFProgressHUD.swift */; };
 		717721341F32C15400418A4F /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 717721321F32C15400418A4F /* Expression.bundle */; };
 		717721351F32C15400418A4F /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 717721331F32C15400418A4F /* Expression.plist */; };
 		717721781F32C26700418A4F /* CCSwipBackPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717721371F32C26700418A4F /* CCSwipBackPresentationController.swift */; };
@@ -63,10 +67,14 @@
 
 /* Begin PBXFileReference section */
 		712D63E71F31D34800B3FECF /* XNWeChatSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNWeChatSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		712D63EA1F31D34800B3FECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712D63F41F31D34800B3FECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712D63F61F31D34800B3FECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712D63FC1F31D39200B3FECF /* XNWeChatSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XNWeChatSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		714F7BE41F344505005E47AC /* XNMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNMainController.swift; sourceTree = "<group>"; };
+		714F7BE61F344524005E47AC /* XNUserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNUserController.swift; sourceTree = "<group>"; };
+		714F7BE81F34458A005E47AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		714F7BF51F344C5C005E47AC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		714F7C051F34568B005E47AC /* LXFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXFProgressHUD.swift; sourceTree = "<group>"; };
 		717721321F32C15400418A4F /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		717721331F32C15400418A4F /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		717721371F32C26700418A4F /* CCSwipBackPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSwipBackPresentationController.swift; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714F7BF61F344C5C005E47AC /* QuartzCore.framework in Frameworks */,
 				FAD980F00F401B5CB6389F03 /* Pods_XNWeChatSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +165,7 @@
 		15D5F43DDA4A700A52EF83F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				714F7BF51F344C5C005E47AC /* QuartzCore.framework */,
 				F34201A3908881DDFD707906 /* Pods_XNWeChatSwift.framework */,
 			);
 			name = Frameworks;
@@ -183,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				717721291F32C0E200418A4F /* Classses */,
-				712D63EA1F31D34800B3FECF /* AppDelegate.swift */,
 				717721B21F32CBA800418A4F /* Assets.xcassets */,
 				712D63F31F31D34800B3FECF /* LaunchScreen.storyboard */,
 				712D63F61F31D34800B3FECF /* Info.plist */,
@@ -192,15 +201,39 @@
 			path = XNWeChatSwift;
 			sourceTree = "<group>";
 		};
+		714F7BDB1F34441A005E47AC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				714F7C051F34568B005E47AC /* LXFProgressHUD.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		714F7BDC1F34441A005E47AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				714F7BE41F344505005E47AC /* XNMainController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		714F7BDD1F34441A005E47AC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				714F7BE61F344524005E47AC /* XNUserController.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		717721291F32C0E200418A4F /* Classses */ = {
 			isa = PBXGroup;
 			children = (
+				714F7BDB1F34441A005E47AC /* Global */,
+				714F7BDC1F34441A005E47AC /* Main */,
+				714F7BDD1F34441A005E47AC /* User */,
 				7177212A1F32C0E200418A4F /* General */,
-				7177212B1F32C0E200418A4F /* Global */,
 				7177212C1F32C0E200418A4F /* Lib */,
-				7177212D1F32C0E200418A4F /* Main */,
 				7177212E1F32C0E200418A4F /* Other */,
-				7177212F1F32C0E200418A4F /* User */,
 			);
 			path = Classses;
 			sourceTree = "<group>";
@@ -211,13 +244,6 @@
 				7177219E1F32C2AD00418A4F /* Common.swift */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		7177212B1F32C0E200418A4F /* Global */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Global;
 			sourceTree = "<group>";
 		};
 		7177212C1F32C0E200418A4F /* Lib */ = {
@@ -235,27 +261,14 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		7177212D1F32C0E200418A4F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		7177212E1F32C0E200418A4F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				714F7BE81F34458A005E47AC /* AppDelegate.swift */,
 				717721A01F32C30000418A4F /* Category */,
 				717721301F32C15400418A4F /* Resources */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		7177212F1F32C0E200418A4F /* User */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = User;
 			sourceTree = "<group>";
 		};
 		717721301F32C15400418A4F /* Resources */ = {
@@ -441,6 +454,7 @@
 		712D63DF1F31D34800B3FECF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XN;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = xunan;
@@ -549,6 +563,7 @@
 				7177219F1F32C2AD00418A4F /* Common.swift in Sources */,
 				717721931F32C26700418A4F /* TZImagePickerController.m in Sources */,
 				717721851F32C26700418A4F /* LBXScanNetAnimation.swift in Sources */,
+				714F7C061F34568B005E47AC /* LXFProgressHUD.swift in Sources */,
 				717721891F32C26700418A4F /* LBXScanWrapper.swift in Sources */,
 				717721861F32C26700418A4F /* LBXScanView.swift in Sources */,
 				717721991F32C26700418A4F /* UIView+Layout.m in Sources */,
@@ -561,7 +576,10 @@
 				717721801F32C26700418A4F /* KZVideoPlayer.m in Sources */,
 				717721841F32C26700418A4F /* LBXScanLineAnimation.swift in Sources */,
 				717721791F32C26700418A4F /* CCZoomAnimatedTransitioning.swift in Sources */,
+				714F7BE51F344505005E47AC /* XNMainController.swift in Sources */,
 				717721AC1F32C30000418A4F /* UITextField+Extenstion.swift in Sources */,
+				714F7BE91F34458A005E47AC /* AppDelegate.swift in Sources */,
+				714F7BE71F344524005E47AC /* XNUserController.swift in Sources */,
 				717721911F32C26700418A4F /* TZImageManager.m in Sources */,
 				7177217B1F32C26700418A4F /* CCZoomTransitionVCExtension.swift in Sources */,
 				717721941F32C26700418A4F /* TZPhotoPickerController.m in Sources */,
@@ -575,7 +593,6 @@
 				717721881F32C26700418A4F /* LBXScanViewStyle.swift in Sources */,
 				717721A81F32C30000418A4F /* String+Extenstion.swift in Sources */,
 				7177218A1F32C26700418A4F /* LXFActionSheet.swift in Sources */,
-				712D63EB1F31D34800B3FECF /* AppDelegate.swift in Sources */,
 				7177219D1F32C26700418A4F /* WKWebViewController.swift in Sources */,
 				717721AE1F32C30000418A4F /* UIViewController+Extenstion.swift in Sources */,
 				717721AB1F32C30000418A4F /* UITabBar+Extenstion.swift in Sources */,
@@ -713,7 +730,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "Pods/** ${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/** Pods/**";
 			};
 			name = Debug;
 		};
@@ -732,7 +749,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/XNWeChatSwift/XNWechatSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
-				USER_HEADER_SEARCH_PATHS = "Pods/** ${SRCROOT}/**";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/** Pods/**";
 			};
 			name = Release;
 		};
