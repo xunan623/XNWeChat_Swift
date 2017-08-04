@@ -7,8 +7,11 @@
 /** ================================= Pod =================================== */
 #import "AFNetworking.h"
 #import "SVProgressHUD.h"
-#import <NIMSDK/NIMSDK.h>
+//#import <NIMSDK/NIMSDK.h>
+//#import <NIMSDK.h>
 //#import "NIMSDK.h"
+#import "XNOCHeader.h"
+
 /** ================================= Lib =================================== */
 #import <CommonCrypto/CommonDigest.h>
 #import "TZImagePickerController.h"

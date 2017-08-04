@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AFNetworking
+import SVProgressHUD
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,15 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NIMSDK.shared().register(withAppID: kAppKey, cerName: nil)
         
         /** 初始化 */
-        
+        LXFProgressHUD.lxf_initHUD()
         
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
+        
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
