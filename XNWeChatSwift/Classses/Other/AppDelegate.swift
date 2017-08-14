@@ -24,6 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /** 初始化 */
         LXFProgressHUD.lxf_initHUD()
         
+        let rootVC = LXFWeChatTools.shared.autoLogin() ? XNMainController() : XNUserController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = rootVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

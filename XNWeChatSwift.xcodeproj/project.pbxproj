@@ -19,6 +19,12 @@
 		714F7C111F346F4C005E47AC /* LXFWeChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C0C1F346F4C005E47AC /* LXFWeChatTools.swift */; };
 		714F7C141F3471D7005E47AC /* XNOCHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C131F3471D7005E47AC /* XNOCHeader.m */; };
 		714F7C201F3478A9005E47AC /* LXFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */; };
+		7151D6C11F38101F00CE128C /* XNLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6C01F38101F00CE128C /* XNLoginController.swift */; };
+		7151D6C31F38197200CE128C /* XNLoginTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6C21F38197200CE128C /* XNLoginTopView.swift */; };
+		7151D6C51F38197A00CE128C /* XNLoginTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7151D6C41F38197A00CE128C /* XNLoginTopView.xib */; };
+		7151D6C81F38511A00CE128C /* XNBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6C71F38511A00CE128C /* XNBaseController.swift */; };
+		7151D6CB1F3854EA00CE128C /* XNBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6CA1F3854EA00CE128C /* XNBarButton.swift */; };
+		7151D6CD1F38550800CE128C /* XNLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6CC1F38550800CE128C /* XNLinkButton.swift */; };
 		717721341F32C15400418A4F /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 717721321F32C15400418A4F /* Expression.bundle */; };
 		717721351F32C15400418A4F /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 717721331F32C15400418A4F /* Expression.plist */; };
 		717721781F32C26700418A4F /* CCSwipBackPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717721371F32C26700418A4F /* CCSwipBackPresentationController.swift */; };
@@ -88,6 +94,12 @@
 		714F7C121F3471D7005E47AC /* XNOCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNOCHeader.h; sourceTree = "<group>"; };
 		714F7C131F3471D7005E47AC /* XNOCHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNOCHeader.m; sourceTree = "<group>"; };
 		714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXFProgressHUD.swift; sourceTree = "<group>"; };
+		7151D6C01F38101F00CE128C /* XNLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLoginController.swift; sourceTree = "<group>"; };
+		7151D6C21F38197200CE128C /* XNLoginTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLoginTopView.swift; sourceTree = "<group>"; };
+		7151D6C41F38197A00CE128C /* XNLoginTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNLoginTopView.xib; sourceTree = "<group>"; };
+		7151D6C71F38511A00CE128C /* XNBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseController.swift; sourceTree = "<group>"; };
+		7151D6CA1F3854EA00CE128C /* XNBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBarButton.swift; sourceTree = "<group>"; };
+		7151D6CC1F38550800CE128C /* XNLinkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLinkButton.swift; sourceTree = "<group>"; };
 		717721321F32C15400418A4F /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		717721331F32C15400418A4F /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
 		717721371F32C26700418A4F /* CCSwipBackPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSwipBackPresentationController.swift; sourceTree = "<group>"; };
@@ -234,6 +246,7 @@
 		714F7BDD1F34441A005E47AC /* User */ = {
 			isa = PBXGroup;
 			children = (
+				7151D6B91F380ED800CE128C /* Login */,
 				714F7BE61F344524005E47AC /* XNUserController.swift */,
 			);
 			path = User;
@@ -249,6 +262,65 @@
 				714F7C0C1F346F4C005E47AC /* LXFWeChatTools.swift */,
 			);
 			path = LXFWeChatTools;
+			sourceTree = "<group>";
+		};
+		714F7C231F347C20005E47AC /* XNCommenUI */ = {
+			isa = PBXGroup;
+			children = (
+				7151D6C91F3854EA00CE128C /* XNButton */,
+			);
+			path = XNCommenUI;
+			sourceTree = "<group>";
+		};
+		7151D6B91F380ED800CE128C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7151D6BA1F380ED800CE128C /* Controller */,
+				7151D6BB1F380ED800CE128C /* Model */,
+				7151D6BC1F380ED800CE128C /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7151D6BA1F380ED800CE128C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7151D6C01F38101F00CE128C /* XNLoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7151D6BB1F380ED800CE128C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7151D6BC1F380ED800CE128C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7151D6C21F38197200CE128C /* XNLoginTopView.swift */,
+				7151D6C41F38197A00CE128C /* XNLoginTopView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7151D6C61F38511A00CE128C /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				7151D6C71F38511A00CE128C /* XNBaseController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		7151D6C91F3854EA00CE128C /* XNButton */ = {
+			isa = PBXGroup;
+			children = (
+				7151D6CA1F3854EA00CE128C /* XNBarButton.swift */,
+				7151D6CC1F38550800CE128C /* XNLinkButton.swift */,
+			);
+			path = XNButton;
 			sourceTree = "<group>";
 		};
 		717721291F32C0E200418A4F /* Classses */ = {
@@ -267,6 +339,8 @@
 		7177212A1F32C0E200418A4F /* General */ = {
 			isa = PBXGroup;
 			children = (
+				7151D6C61F38511A00CE128C /* BaseVC */,
+				714F7C231F347C20005E47AC /* XNCommenUI */,
 				7177219E1F32C2AD00418A4F /* Common.swift */,
 			);
 			path = General;
@@ -521,6 +595,7 @@
 				712D63F51F31D34800B3FECF /* LaunchScreen.storyboard in Resources */,
 				717721341F32C15400418A4F /* Expression.bundle in Resources */,
 				7177219B1F32C26700418A4F /* backItemImage_hl@2x.png in Resources */,
+				7151D6C51F38197A00CE128C /* XNLoginTopView.xib in Resources */,
 				7177219A1F32C26700418A4F /* backItemImage@2x.png in Resources */,
 				717721921F32C26700418A4F /* TZImagePickerController.bundle in Resources */,
 				7177219C1F32C26700418A4F /* WKJSPOST.html in Resources */,
@@ -590,11 +665,13 @@
 				7177217F1F32C26700418A4F /* KZVideoListViewController.m in Sources */,
 				717721951F32C26700418A4F /* TZPhotoPreviewCell.m in Sources */,
 				7177219F1F32C2AD00418A4F /* Common.swift in Sources */,
+				7151D6CD1F38550800CE128C /* XNLinkButton.swift in Sources */,
 				717721931F32C26700418A4F /* TZImagePickerController.m in Sources */,
 				717721851F32C26700418A4F /* LBXScanNetAnimation.swift in Sources */,
 				714F7C0F1F346F4C005E47AC /* LXFWeChatTools+Session.swift in Sources */,
 				714F7C111F346F4C005E47AC /* LXFWeChatTools.swift in Sources */,
 				717721891F32C26700418A4F /* LBXScanWrapper.swift in Sources */,
+				7151D6CB1F3854EA00CE128C /* XNBarButton.swift in Sources */,
 				717721861F32C26700418A4F /* LBXScanView.swift in Sources */,
 				717721991F32C26700418A4F /* UIView+Layout.m in Sources */,
 				714F7C101F346F4C005E47AC /* LXFWeChatTools+Update.swift in Sources */,
@@ -606,6 +683,7 @@
 				7177217C1F32C26700418A4F /* DACircularProgressView.m in Sources */,
 				717721831F32C26700418A4F /* LBXPermissions.swift in Sources */,
 				717721801F32C26700418A4F /* KZVideoPlayer.m in Sources */,
+				7151D6C81F38511A00CE128C /* XNBaseController.swift in Sources */,
 				717721841F32C26700418A4F /* LBXScanLineAnimation.swift in Sources */,
 				717721791F32C26700418A4F /* CCZoomAnimatedTransitioning.swift in Sources */,
 				714F7BE51F344505005E47AC /* XNMainController.swift in Sources */,
@@ -619,6 +697,7 @@
 				714F7C141F3471D7005E47AC /* XNOCHeader.m in Sources */,
 				7177218B1F32C26700418A4F /* LXFPopMenu.swift in Sources */,
 				717721A91F32C30000418A4F /* UIButton+Extension.swift in Sources */,
+				7151D6C31F38197200CE128C /* XNLoginTopView.swift in Sources */,
 				7177217E1F32C26700418A4F /* KZVideoConfig.m in Sources */,
 				7177218C1F32C26700418A4F /* NSBundle+TZImagePicker.m in Sources */,
 				717721871F32C26700418A4F /* LBXScanViewController.swift in Sources */,
@@ -630,6 +709,7 @@
 				7177219D1F32C26700418A4F /* WKWebViewController.swift in Sources */,
 				717721AE1F32C30000418A4F /* UIViewController+Extenstion.swift in Sources */,
 				717721AB1F32C30000418A4F /* UITabBar+Extenstion.swift in Sources */,
+				7151D6C11F38101F00CE128C /* XNLoginController.swift in Sources */,
 				717721AD1F32C30000418A4F /* UIView+Extension.swift in Sources */,
 				7177218F1F32C26700418A4F /* TZGifPhotoPreviewController.m in Sources */,
 				717721961F32C26700418A4F /* TZPhotoPreviewController.m in Sources */,
