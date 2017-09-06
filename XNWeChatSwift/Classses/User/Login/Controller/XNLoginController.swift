@@ -77,16 +77,58 @@ extension XNLoginController {
         }
         
         // 登录遇到问题
-    
+        let matterLoginBtn = XNLinkButton(title: "登录遇到问题?", fontSize: 15)
+        view.addSubview(matterLoginBtn)
+        matterLoginBtn.snp.makeConstraints { (make) in
+            make.centerY.equalTo(splitLine.snp.centerY)
+            make.right.equalTo(splitLine.snp.left).offset(-margin)
+        }
+        matterLoginBtn.addTarget(self, action: #selector(matterLogin), for: .touchUpInside)
+        
+        // 其他方式登录
+        let otherLoginBtn = XNLinkButton(title: "其他方式登录", fontSize: 15)
+        view.addSubview(otherLoginBtn)
+        otherLoginBtn.snp.makeConstraints { (make) in
+            make.centerY.equalTo(splitLine.snp.centerY)
+            make.left.equalTo(splitLine.snp.right).offset(margin)
+        }
+        otherLoginBtn.addTarget(self, action: #selector(otherLoing), for: .touchUpInside)
     }
 }
 
 extension XNLoginController {
     @objc func login() {
+        LXFLog("登录")
         
+        guard let account = topView.phoneF.text, let pwd = topView.pwdF.text else {
+            return
+        }
+        
+        self.topView.phoneF.resignFirstResponder()
+        self.topView.pwdF.resignFirstResponder()
+        
+        LXFProgressHUD.lxf_showWithStatus("正在登录")
+        LXFWeChatTools.shared.login(with: account, pwd: pwd) { (error) in
+            LXFProgressHUD.lxf_dismiss()
+            if error != nil {
+                LXFLog("错误码:\(String(describing: error))")
+                LXFLog((error! as NSError).code)
+            } else { // 登录成功
+                // 跳转到主页
+                UIApplication.shared.keyWindow?.rootViewController = XNMainController()
+            }
+        }
     }
     
     @objc func smsLogin() {
-        
+        LXFLog("短信验证码登录")
+    }
+    
+    @objc func matterLogin() {
+        LXFLog("登录遇到问题")
+    }
+    
+    @objc func otherLoing() {
+        LXFLog("其他方式登录")
     }
 }

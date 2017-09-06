@@ -19,6 +19,8 @@
 		714F7C111F346F4C005E47AC /* LXFWeChatTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C0C1F346F4C005E47AC /* LXFWeChatTools.swift */; };
 		714F7C141F3471D7005E47AC /* XNOCHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C131F3471D7005E47AC /* XNOCHeader.m */; };
 		714F7C201F3478A9005E47AC /* LXFProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */; };
+		714FD6601F5F987B00DBF426 /* XNCountryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714FD65F1F5F987B00DBF426 /* XNCountryButton.swift */; };
+		714FD6631F5F9D4D00DBF426 /* XNWeChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714FD6621F5F9D4D00DBF426 /* XNWeChatController.swift */; };
 		7151D6C11F38101F00CE128C /* XNLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6C01F38101F00CE128C /* XNLoginController.swift */; };
 		7151D6C31F38197200CE128C /* XNLoginTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151D6C21F38197200CE128C /* XNLoginTopView.swift */; };
 		7151D6C51F38197A00CE128C /* XNLoginTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7151D6C41F38197A00CE128C /* XNLoginTopView.xib */; };
@@ -94,6 +96,8 @@
 		714F7C121F3471D7005E47AC /* XNOCHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNOCHeader.h; sourceTree = "<group>"; };
 		714F7C131F3471D7005E47AC /* XNOCHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNOCHeader.m; sourceTree = "<group>"; };
 		714F7C191F3478A9005E47AC /* LXFProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXFProgressHUD.swift; sourceTree = "<group>"; };
+		714FD65F1F5F987B00DBF426 /* XNCountryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCountryButton.swift; sourceTree = "<group>"; };
+		714FD6621F5F9D4D00DBF426 /* XNWeChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNWeChatController.swift; sourceTree = "<group>"; };
 		7151D6C01F38101F00CE128C /* XNLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLoginController.swift; sourceTree = "<group>"; };
 		7151D6C21F38197200CE128C /* XNLoginTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLoginTopView.swift; sourceTree = "<group>"; };
 		7151D6C41F38197A00CE128C /* XNLoginTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNLoginTopView.xib; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 		714F7BDC1F34441A005E47AC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				714FD6611F5F9D0B00DBF426 /* WeChat */,
 				714F7BE41F344505005E47AC /* XNMainController.swift */,
 			);
 			path = Main;
@@ -272,6 +277,14 @@
 			path = XNCommenUI;
 			sourceTree = "<group>";
 		};
+		714FD6611F5F9D0B00DBF426 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				714FD6621F5F9D4D00DBF426 /* XNWeChatController.swift */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
 		7151D6B91F380ED800CE128C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +315,7 @@
 			children = (
 				7151D6C21F38197200CE128C /* XNLoginTopView.swift */,
 				7151D6C41F38197A00CE128C /* XNLoginTopView.xib */,
+				714FD65F1F5F987B00DBF426 /* XNCountryButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -693,6 +707,7 @@
 				717721911F32C26700418A4F /* TZImageManager.m in Sources */,
 				714F7C201F3478A9005E47AC /* LXFProgressHUD.swift in Sources */,
 				7177217B1F32C26700418A4F /* CCZoomTransitionVCExtension.swift in Sources */,
+				714FD6601F5F987B00DBF426 /* XNCountryButton.swift in Sources */,
 				717721941F32C26700418A4F /* TZPhotoPickerController.m in Sources */,
 				714F7C141F3471D7005E47AC /* XNOCHeader.m in Sources */,
 				7177218B1F32C26700418A4F /* LXFPopMenu.swift in Sources */,
@@ -702,6 +717,7 @@
 				7177218C1F32C26700418A4F /* NSBundle+TZImagePicker.m in Sources */,
 				717721871F32C26700418A4F /* LBXScanViewController.swift in Sources */,
 				7177217D1F32C26700418A4F /* DALabeledCircularProgressView.m in Sources */,
+				714FD6631F5F9D4D00DBF426 /* XNWeChatController.swift in Sources */,
 				7177218D1F32C26700418A4F /* TZAssetCell.m in Sources */,
 				717721881F32C26700418A4F /* LBXScanViewStyle.swift in Sources */,
 				717721A81F32C30000418A4F /* String+Extenstion.swift in Sources */,
